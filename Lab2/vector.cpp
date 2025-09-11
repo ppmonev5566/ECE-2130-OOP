@@ -10,7 +10,7 @@ using namespace std;
 void printMemVec(vector<int> vec) {
     printf("Array - Each int is worth %lu bytes\n", sizeof(vec[0]));
     for(int i = 0; i < vec.size(); i++){
-        printf("Value: %i at Memory Location: %p\n", vec[i], &vec + i);
+        printf("Value: %i at Memory Location: %p\n", vec[i], (&(vec)) + i);
     }
 }
 
